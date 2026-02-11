@@ -86,7 +86,20 @@
   pointer-events: none;
   z-index: 2;
 }
-</style></head>
+</style>
+<style>
+.curtain-overlay {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  pointer-events: none;
+  z-index: 2;
+}
+</style>
+</head>
 <body class="theme-1" style="">
 <div class="editableSection" id="wrapper" style="pointer-events: auto;">
 <div class="" data-src="header.html" id="header"></div>
@@ -101,55 +114,53 @@
 </div>
 </article>
 </div>
-<section class="team-section padding section-wrapper home-5 effect slide-right animate" id="section-sw2ndrc80f">
+<section class="section-wrapper home-10 effect bounce-in animate" id="section-iioiowrc488" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
 <div class="container">
-<div class="section-heading mb-40 text-center">
-<h2>Meet Our Instructors</h2>
-<p> We have well trained and experienced line of Faculties stationed in our campus who are committed to
-				instil life values and quality</p>
+<div class="home-10-title text-center">
+<p class="home-10-subtitle">Rooms</p>
+<h2 class="home-10-heading">Our best rooms</h2>
 </div>
-<div class="row team-wrap">
-<div class="col-lg-3 col-md-6 sm-padding">
-<div class="team-box">
-<div class="team-thumb">
-<img alt="team" src="assets/images/team-1.jpg"/>
+<div class="row">
+<!-- Room Card -->
+<div class="col-sm-6 col-md-4">
+<div class="home-10-card">
+<img alt="Ocean View" class="img-responsive updateImg" data-original-src="assets/images/home10-1.jpg" src="assets/images/home10-1.jpg"/>
+<div class="home-10-card-info">
+<span class=""><i class="glyphicon glyphicon-user"></i> Adults: 4</span>
+<span class=""><i class="glyphicon glyphicon-resize-full"></i> Size: 95ft²</span>
 </div>
-<div class="team-details">
-<h4>Michel Brown</h4>
-<span>Pre-Primary Incharge</span>
+<h4 class="home-10-room-title">Ocean View</h4>
+<p class="home-10-room-desc">Accusantium doloremque laudantium, totam rem aperiam beatae vitae dicta
+						sunt, explicabo</p>
+<div class="home-10-card-footer">
+<span class="home-10-price">$ 49 <small class="">/per night</small></span>
+<span class="home-10-icon"><i class="glyphicon glyphicon-bookmark"></i></span></div></div></div><div class="col-sm-6 col-md-4"><div class="home-10-card"><img alt="Sunset Suite" class="img-responsive updateImg" data-original-src="assets/images/home10-2.jpg" src="assets/images/home10-2.jpg"/>
+<div class="home-10-card-info">
+<span class=""><i class="glyphicon glyphicon-user"></i> Adults: 4</span>
+<span class=""><i class="glyphicon glyphicon-resize-full"></i> Size: 95ft²</span>
 </div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6 sm-padding">
-<div class="team-box">
-<div class="team-thumb">
-<img alt="team" src="assets/images/team-2.jpg"/>
-</div>
-<div class="team-details">
-<h4>Donal Trump</h4>
-<span>Primary Incharge</span>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6 sm-padding">
-<div class="team-box">
-<div class="team-thumb">
-<img alt="team" src="assets/images/team-3.jpg"/>
-</div>
-<div class="team-details">
-<h4>Jhon Smith</h4>
-<span>High School Incharge</span>
+<h4 class="home-10-room-title">Sunset Suite</h4>
+<p class="home-10-room-desc">Accusantium doloremque laudantium, totam rem aperiam beatae vitae dicta
+						sunt, explicabo</p>
+<div class="home-10-card-footer">
+<span class="home-10-price">$ 49 <small class="">/per night</small></span>
+<span class="home-10-icon"><i class="glyphicon glyphicon-bookmark"></i></span>
 </div>
 </div>
 </div>
-<div class="col-lg-3 col-md-6 sm-padding">
-<div class="team-box">
-<div class="team-thumb">
-<img alt="team" src="assets/images/team-4.jpg"/>
+<div class="col-sm-6 col-md-4">
+<div class="home-10-card">
+<img alt="Beachfront Bliss" class="img-responsive updateImg" data-original-src="assets/images/home10-3.jpg" src="assets/images/home10-3.jpg"/>
+<div class="home-10-card-info">
+<span class=""><i class="glyphicon glyphicon-user"></i> Adults: 4</span>
+<span class=""><i class="glyphicon glyphicon-resize-full"></i> Size: 95ft²</span>
 </div>
-<div class="team-details">
-<h4>Angelina Rose</h4>
-<span>Junior College Incharge</span>
+<h4 class="home-10-room-title">Beachfront Bliss</h4>
+<p class="home-10-room-desc">Accusantium doloremque laudantium, totam rem aperiam beatae vitae dicta
+						sunt, explicabo</p>
+<div class="home-10-card-footer">
+<span class="home-10-price">$ 49 <small class="">/per night</small></span>
+<span class="home-10-icon"><i class="glyphicon glyphicon-bookmark"></i></span>
 </div>
 </div>
 </div>
@@ -212,5 +223,26 @@
 <script src="assets/js/middle-section.js"></script>
 <script src="assets/js/common_js/image_uploader.js"></script>
 <script src="/assets/js/custom/editModeScript.js"></script>
-<form enctype="multipart/form-data" id="imgForm" method="post"><input class="hidden formFieldFileName" name="imgFileName" type="text" value=""/><input accept="image/*" class="hidden" id="image-upload" name="imgFile" type="file"/><input class="hidden formFieldFileName" name="imgFileName" type="text" value=""/></form><form class="hidden" enctype="multipart/form-data" id="imgForm" method="post"></form>
-</body>
+<form enctype="multipart/form-data" id="imgForm" method="post"><input class="hidden formFieldFileName" name="imgFileName" type="text" value=""/><input class="hidden formFieldFileName" name="imgFileName" type="text" value=""/><input class="hidden formFieldFileName" name="imgFileName" type="text" value=""/><input class="hidden formFieldFileName" name="imgFileName" type="text" value=""/><input class="hidden formFieldFileName" name="imgFileName" type="text" value=""/><input accept="image/*" class="hidden" id="image-upload" name="imgFile" type="file"/><input class="hidden formFieldFileName" name="imgFileName" type="text" value=""/><input accept="image/*" class="hidden" id="image-upload" name="imgFile" type="file"/><input class="hidden formFieldFileName" name="imgFileName" type="text" value=""/><input accept="image/*" class="hidden" id="image-upload" name="imgFile" type="file"/><input class="hidden formFieldFileName" name="imgFileName" type="text" value=""/><input accept="image/*" class="hidden" id="image-upload" name="imgFile" type="file"/><input class="hidden formFieldFileName" name="imgFileName" type="text" value=""/><input accept="image/*" class="hidden" id="image-upload" name="imgFile" type="file"/><input class="hidden formFieldFileName" name="imgFileName" type="text" value=""/><input accept="image/*" class="hidden" id="image-upload" name="imgFile" type="file"/><input class="hidden formFieldFileName" name="imgFileName" type="text" value=""/><input accept="image/*" class="hidden" id="image-upload" name="imgFile" type="file"/><input class="hidden formFieldFileName" name="imgFileName" type="text" value=""/><input accept="image/*" class="hidden" id="image-upload" name="imgFile" type="file"/><input class="hidden formFieldFileName" name="imgFileName" type="text" value=""/><input accept="image/*" class="hidden" id="image-upload" name="imgFile" type="file"/><input class="hidden formFieldFileName" name="imgFileName" type="text" value=""/><input accept="image/*" class="hidden" id="image-upload" name="imgFile" type="file"/><input class="hidden formFieldFileName" name="imgFileName" type="text" value=""/><input accept="image/*" class="hidden" id="image-upload" name="imgFile" type="file"/><input class="hidden formFieldFileName" name="imgFileName" type="text" value=""/><input accept="image/*" class="hidden" id="image-upload" name="imgFile" type="file"/><input class="hidden formFieldFileName" name="imgFileName" type="text" value=""/><input accept="image/*" class="hidden" id="image-upload" name="imgFile" type="file"/><input class="hidden formFieldFileName" name="imgFileName" type="text" value=""/><input accept="image/*" class="hidden" id="image-upload" name="imgFile" type="file"/><input class="hidden formFieldFileName" name="imgFileName" type="text" value=""/><input accept="image/*" class="hidden" id="image-upload" name="imgFile" type="file"/><input class="hidden formFieldFileName" name="imgFileName" type="text" value=""/></form><form class="hidden" enctype="multipart/form-data" id="imgForm" method="post"></form>
+<script src="/assets/js/custom/editModeScript.js"></script>
+<form enctype="multipart/form-data" id="imgForm" method="post"></form><form class="hidden" enctype="multipart/form-data" id="imgForm" method="post"></form><form class="hidden" enctype="multipart/form-data" id="imgForm" method="post"></form>
+<div class="custom-modal" id="alertDialog" style="">
+<div class="custom-modal-content">
+<div class="custom-modal-header">
+<span class="custom-modal-icon">!</span>
+<h2>Please enable editing mode</h2>
+</div>
+<div class="custom-modal-body">
+<p>You need to enable editing mode before adding new sections. </p>
+</div>
+<div class="custom-modal-footer">
+<button class="btn cancel" id="cancelBtn">Close</button>
+</div>
+</div>
+</div>
+<script src="/assets/js/custom/editModeScript.js"></script>
+<form enctype="multipart/form-data" id="imgForm" method="post"></form><form class="hidden" enctype="multipart/form-data" id="imgForm" method="post"></form><form class="hidden" enctype="multipart/form-data" id="imgForm" method="post"></form><form class="hidden" enctype="multipart/form-data" id="imgForm" method="post"></form>
+<script src="/assets/js/custom/editModeScript.js"></script>
+<form enctype="multipart/form-data" id="imgForm" method="post"></form><form class="hidden" enctype="multipart/form-data" id="imgForm" method="post"></form><form class="hidden" enctype="multipart/form-data" id="imgForm" method="post"></form><form class="hidden" enctype="multipart/form-data" id="imgForm" method="post"></form><form class="hidden" enctype="multipart/form-data" id="imgForm" method="post"></form>
+<script src="/assets/js/custom/editModeScript.js"></script>
+<form enctype="multipart/form-data" id="imgForm" method="post"></form><form class="hidden" enctype="multipart/form-data" id="imgForm" method="post"></form><form class="hidden" enctype="multipart/form-data" id="imgForm" method="post"></form><form class="hidden" enctype="multipart/form-data" id="imgForm" method="post"></form><form class="hidden" enctype="multipart/form-data" id="imgForm" method="post"></form><form class="hidden" enctype="multipart/form-data" id="imgForm" method="post"></form></body>
